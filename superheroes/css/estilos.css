@@ -1,3 +1,5 @@
+/* Fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Karla:wght@400;700&display=swap');
 /* Estilos generales */
 
 *{
@@ -20,7 +22,7 @@ aside{
     z-index: 2;
 }
 
-/* titulo principal */
+/* Header */
 h1{
     background-color: #00669F;
     color: white;
@@ -30,16 +32,23 @@ h1{
     box-shadow: 5px 5px 5px gray;
 }
 
+/*********************Superheroes******************/
+
 /* seccion tarjetas */
 .cards-super{
-    width: 70%;
-    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
 }
 
 /* tarjeta entera */
 
 .card{
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    width: 30%;
+
 }
 
 /* fondos de tarjetas */
@@ -57,21 +66,21 @@ h1{
 
 .card-header-bat{
     background-image: url("../img/bg-batman.jpg");
-    height: 500px;
+    height: 200px;
     width: 100%;
     background-size: cover;
 }
 
 .card-header-wonder{
     background-image: url("../img/bg-wonderw.jpg");
-    height: 500px;
+    height: 200px;
     width: 100%;
     background-size: cover;
 }
 
 .card-header-super{
     background-image: url("../img/bg-superman.jpg");
-    height: 500px;
+    height: 200px;
     width: 100%;
     background-size: cover;
 }
@@ -79,8 +88,8 @@ h1{
 /* Imagenes redondas */
 .img-bat{
     background-image: url("../img/batman.jpg");
-    width: 300px;
-    height: 300px;
+    /* width: 300px;
+    height: 300px; */
     background-position-x: -180px;
     background-size: cover;
     border-radius: 50%;
@@ -89,8 +98,8 @@ h1{
 
 .img-wonder{
     background-image: url("../img/wonderw.jpg");
-    width: 300px;
-    height: 300px;
+    /* width: 300px;
+    height: 300px; */
     background-position: center;
     background-size: cover;
     border-radius: 50%;
@@ -99,8 +108,8 @@ h1{
 
 .img-super{
     background-image: url("../img/superman.jpg");
-    width: 300px;
-    height: 300px;
+    /* width: 300px;
+    height: 300px; */
     background-position: center;
     background-size: cover;
     border-radius: 50%;
@@ -144,30 +153,6 @@ h2{
     border-radius: 5px;
 }
 
-/* pie de pagina */
-
-footer{
-    background-color: #00669F;
-    margin-top: 100px;
-}
-
-footer img{
-    position: relative;
-    right: -1100px;
-    width: 100px;
-    padding-bottom: 10px;
-}
-
-footer p{
-    text-align: center;
-    color: white;
-    padding-top: 1.5rem;
-}
-
-footer p span{
-    text-transform: uppercase;
-}
-
 /* icono mas */
 .icono-mas i{
     color: white;
@@ -179,3 +164,99 @@ footer p span{
     bottom: 50px;
     right: 50px;
 }
+
+/*****************Login*******************/
+.contenedor-login{
+    margin-left: 30%;
+    margin-top: 50px;
+}
+
+.contenedor-login h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    text-transform: none;
+}
+
+.input{
+    width: 620px;
+    height: 60px;
+    border: 1.5px solid black;
+    margin: 10px 0;
+    font-family: 'Karla', sans-serif;
+    color: black;
+    padding: 15px 25px;
+    display: block;
+}
+
+.boton{
+    background-color: #1CD1B0;
+    width: 620px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 5px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.contenedor-login div{
+    margin-left: 20%;
+}
+
+.contenedor-login p{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    color: #00669F;
+    
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+/* Pagina de registro - botones */
+
+.boton-reset{
+    width: 300px;
+    background-color: #888888;
+    color: white;
+    display: inline-block;
+}
+
+.boton-entrar{
+    width: 300px;
+    display: inline-block;
+}
+
+
+/* pie de pagina */
+
+footer{
+    background-color: #00669F;
+    margin-top: 100px;
+    height: 70px;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer img{
+    width: 100px;
+    margin-left: 10px;
+}
+
+footer p span{
+    text-transform: uppercase;
+}
+
