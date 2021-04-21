@@ -17,20 +17,53 @@ aside{
     background-color:#1CD1B0;
     font-size: 20px;
     height: 2rem;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 2;
 }
 
 /* Header */
+
+header .fas{
+    font-size: 30px;
+    margin: 5px;
+}
+
 h1{
     background-color: #00669F;
     color: white;
     font-weight: normal;
+    font-size: 30px;
     padding: 1rem;
-    padding-top: 40px;
     box-shadow: 5px 5px 5px gray;
 }
+
+/* Navegación */
+nav{
+    background-color: #001D2D;
+    position: absolute;
+    width: 100%;
+    
+}
+nav ul{
+    position: relative;
+    left: 1000px;
+    
+}
+
+nav li{
+    display: inline-block;
+    padding: 10px 5px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
 
 /*********************Superheroes******************/
 
@@ -39,16 +72,14 @@ h1{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    align-items: center;
-    width: 90%;
+    align-items:flex-start;
+    margin: 100px 100px 0 100px;
 }
 
 /* tarjeta entera */
 
 .card{
-    /* margin-top: 100px; */
     width: 30%;
-
 }
 
 /* fondos de tarjetas */
@@ -59,8 +90,8 @@ h1{
 
 .card-header div{
     position: absolute;
-    top: 350px;
-    right: 300px;
+    top: 150px;
+    left: 160px;
 
 }
 
@@ -88,9 +119,9 @@ h1{
 /* Imagenes redondas */
 .img-bat{
     background-image: url("../img/batman.jpg");
-    /* width: 300px;
-    height: 300px; */
-    background-position-x: -180px;
+    width: 120px;
+    height: 120px;
+    background-position: center;
     background-size: cover;
     border-radius: 50%;
     background-repeat: no-repeat;
@@ -98,8 +129,8 @@ h1{
 
 .img-wonder{
     background-image: url("../img/wonderw.jpg");
-    /* width: 300px;
-    height: 300px; */
+    width: 120px;
+    height: 120px;
     background-position: center;
     background-size: cover;
     border-radius: 50%;
@@ -108,8 +139,8 @@ h1{
 
 .img-super{
     background-image: url("../img/superman.jpg");
-    /* width: 300px;
-    height: 300px; */
+    width: 120px;
+    height: 120px;
     background-position: center;
     background-size: cover;
     border-radius: 50%;
@@ -119,9 +150,10 @@ h1{
 /* cuerpo gris de las tarjetas */
 .card-body{
     background-color: #F3F3F3;
-    padding: 180px 50px 40px;
+    padding: 100px 50px 40px;
     text-align: center;
     box-shadow: 0px 5px 5px gray;
+    min-height: 75vh;
 }
 
 h2{
@@ -161,7 +193,7 @@ h2{
     font-size: 3rem;
     padding: 1rem;
     position: fixed;
-    bottom: 50px;
+    bottom: 200px;
     right: 50px;
 }
 
