@@ -95,30 +95,33 @@ nav li a{
 
 }
 
-.card-header-bat{
-    background-image: url("../img/bg-batman.jpg");
+.card-header-harley{
+    background-image: url("../img/harley-queen-bg.png");
     height: 200px;
     width: 100%;
     background-size: cover;
+    background-position: center center;
 }
 
-.card-header-wonder{
-    background-image: url("../img/bg-wonderw.jpg");
+.card-header-catwoman{
+    background-image: url("../img/catwoman-bg.png");
     height: 200px;
     width: 100%;
     background-size: cover;
+    background-position: center center;
 }
 
-.card-header-super{
-    background-image: url("../img/bg-superman.jpg");
+.card-header-poison{
+    background-image: url("../img/poison-ivy-bg.png");
     height: 200px;
     width: 100%;
     background-size: cover;
+    background-position: center center;
 }
 
 /* Imagenes redondas */
-.img-bat{
-    background-image: url("../img/batman.jpg");
+.img-harley{
+    background-image: url("../img/harley-queen-icon.png");
     width: 120px;
     height: 120px;
     background-position: center;
@@ -127,8 +130,8 @@ nav li a{
     background-repeat: no-repeat;
 }
 
-.img-wonder{
-    background-image: url("../img/wonderw.jpg");
+.img-catwoman{
+    background-image: url("../img/catwoman-icon.png");
     width: 120px;
     height: 120px;
     background-position: center;
@@ -137,8 +140,8 @@ nav li a{
     background-repeat: no-repeat;
 }
 
-.img-super{
-    background-image: url("../img/superman.jpg");
+.img-poison{
+    background-image: url("../img/poison-ivy-icon.png");
     width: 120px;
     height: 120px;
     background-position: center;
@@ -198,19 +201,19 @@ h2{
 }
 
 /*****************Login*******************/
-.contenedor-login{
+.contenedor{
     margin-left: 30%;
     margin-top: 50px;
 }
 
-.contenedor-login h2{
+.contenedor h2{
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 72px;
     text-transform: none;
 }
 
-.input{
+.input, textarea{
     width: 620px;
     height: 60px;
     border: 1.5px solid black;
@@ -219,6 +222,10 @@ h2{
     color: black;
     padding: 15px 25px;
     display: block;
+}
+
+textarea{
+    height: 250px;
 }
 
 .boton{
