@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadí tu Super</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <aside>
+        <p>Descuentos 20%</p>
+    </aside>
+    <header>
+        <h1>SuperCool</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="registro.html">Registrarme</a></li>
+            <li><a href="index.html">Ingresar</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="caja-azul">
+            <h2>Añadí tu súper</h2>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
+            <form action="superheroes.html">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div>
+                    <label for="especie">Especie</label>
+                    <select name="especie" id="especie">
+                        <option value="marciano">Marciano</option>
+                        <option value="saturniano">Saturniano</option>
+                        <option value="elfo">Elfo</option>
+                        <option value="" selected disabled hidden>Especie</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+                <div>
+                    <label for="archivo">Agregar foto</label>
+                    <input type="file" name="archivo" id="archivo">
+                </div>
+                <div>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10">Descripción</textarea>
+                </div>
+                <div>
+                    <span>Poderes</span>
+                    <input class="de-linea" type="checkbox" name="volar" id="volar">
+                    <label class="de-linea" for="volar">Volar</label>
+                    <input class="de-linea" type="checkbox" name="ciencia" id="ciencia">
+                    <label class="de-linea" for="ciencia">ciencia</label>
+                    <input class="de-linea" type="checkbox" name="rayos-x" id="rayos-x">
+                    <label class="de-linea" for="rayos-x">rayos-x</label>
+                    <input class="de-linea" type="checkbox" name="dinero" id="dinero">
+                    <label class="de-linea" for="dinero">dinero</label>
+
+                </div>
+                <div>
+                    <span>Tipo de Personaje</span>
+                    <input class="de-linea" type="radio" name="tipo-personaje" id="tipo-personaje" value="Superherox">
+                    <label class="de-linea" for="tipo-personaje">Superherox</label>
+                    <input class="de-linea" type="radio" name="tipo-personaje" id="tipo-personaje" value="Villanx">
+                    <label class="de-linea" for="tipo-personaje">Villanx</label>
+                </div>
+
+                <input type="submit" value="Aniadir">
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Todos los derechos reservados a <span>front end 1</span>
+        </p>
+    </footer>
+
+</body>
+
+</html>
