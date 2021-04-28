@@ -32,11 +32,11 @@
             <form action="superheroes.html">
                 <div>
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
+                    <input type="text" name="nombre" id="nombre" required>
                 </div>
                 <div>
                     <label for="especie">Especie</label>
-                    <select name="especie" id="especie">
+                    <select name="especie" id="especie" required>
                         <option value="marciano">Marciano</option>
                         <option value="saturniano">Saturniano</option>
                         <option value="elfo">Elfo</option>
@@ -54,27 +54,50 @@
                 <div>
                     <textarea name="comentario" id="comentario" cols="30" rows="10">Descripción</textarea>
                 </div>
-                <div>
-                    <span>Poderes</span>
-                    <input class="de-linea" type="checkbox" name="volar" id="volar">
-                    <label class="de-linea" for="volar">Volar</label>
-                    <input class="de-linea" type="checkbox" name="ciencia" id="ciencia">
-                    <label class="de-linea" for="ciencia">ciencia</label>
-                    <input class="de-linea" type="checkbox" name="rayos-x" id="rayos-x">
-                    <label class="de-linea" for="rayos-x">rayos-x</label>
-                    <input class="de-linea" type="checkbox" name="dinero" id="dinero">
-                    <label class="de-linea" for="dinero">dinero</label>
 
-                </div>
-                <div>
-                    <span>Tipo de Personaje</span>
-                    <input class="de-linea" type="radio" name="tipo-personaje" id="tipo-personaje" value="Superherox">
-                    <label class="de-linea" for="tipo-personaje">Superherox</label>
-                    <input class="de-linea" type="radio" name="tipo-personaje" id="tipo-personaje" value="Villanx">
-                    <label class="de-linea" for="tipo-personaje">Villanx</label>
-                </div>
+                <!-- Seccion de radio buttons y checkboxes -->
+                <section class="poderes_personajes">
 
-                <input type="submit" value="Aniadir">
+                    <article class="poderes">
+                        <span>Poderes</span>
+                        <div>
+                            <input class="de-linea" type="checkbox" name="volar" id="volar">
+                            <label class="de-linea" for="volar">Volar</label>
+                        </div>
+
+                        <div>
+                            <input class="de-linea" type="checkbox" name="ciencia" id="ciencia">
+                            <label class="de-linea" for="ciencia">Ciencia</label>
+                        </div>
+
+                        <div>
+                            <input class="de-linea" type="checkbox" name="rayos-x" id="rayos-x">
+                            <label class="de-linea" for="rayos-x">Rayos-x</label>
+                        </div>
+
+                        <div>
+                            <input class="de-linea" type="checkbox" name="dinero" id="dinero">
+                            <label class="de-linea" for="dinero">Dinero</label>
+                        </div>
+                    </article>
+
+                    <article class="personajes">
+                        <span>Tipo de Personaje</span>
+                        <div>
+                            <input class="de-linea" type="radio" name="tipo-personaje" id="tipo-personaje"
+                                value="Superherox">
+                            <label class="de-linea" for="tipo-personaje">Superherox</label>
+                        </div>
+                        <div>
+                            <input class="de-linea" type="radio" name="tipo-personaje" id="tipo-personaje"
+                                value="Villanx">
+                            <label class="de-linea" for="tipo-personaje">Villanx</label>
+                        </div>
+                    </article>
+
+                </section>
+
+                <input class="boton boton_center" type="submit" value="Añadir">
             </form>
 
         </section>
