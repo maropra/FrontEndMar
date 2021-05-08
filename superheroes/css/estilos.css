@@ -63,6 +63,20 @@ nav li a{
     color: white;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
+    margin: 50px;
+}
+
+nav ul li a::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: red;
+    position:absolute;
+    left:-10px;
+    
+}
+nav li:hover::before{
+    display: inline-block;
 }
 
 
